@@ -74,13 +74,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Foreach_demo" sap:VirtualizedContainerService.HintSize="879,623" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Foreach_demo" sap:VirtualizedContainerService.HintSize="879,796" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="504,600" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="504,773" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="Sum">
           <Variable.Default>
@@ -131,7 +131,8 @@
           <InArgument x:TypeArguments="x:Double">[Sum/Marks.Length]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="470,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Average marks is &quot;+Avg.ToString]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="470,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Average marks is &quot;+Avg.ToString]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="470,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Average is &quot;+Avg.ToString]" />
     </Sequence>
   </Sequence>
 </Activity>
